@@ -16,6 +16,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
+$gray-main: #403C3C !default;
 $black:    #000 !default;
 // scss-docs-end gray-color-variables
 
@@ -63,7 +64,7 @@ $colors: (
   "black":      $black,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-main
 ) !default;
 // scss-docs-end colors-map
 
@@ -305,7 +306,7 @@ $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$dark:          $gray-main !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -433,8 +434,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
+  xl: 1200px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -451,8 +451,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+  xl: 1140px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -1083,14 +1082,15 @@ $nav-pills-link-active-bg:          $component-active-bg !default;
 $navbar-padding-y:                  $spacer * .5 !default;
 $navbar-padding-x:                  null !default;
 
-$navbar-nav-link-padding-x:         .5rem !default;
+$navbar-nav-link-padding-x:         .75rem !default;
 
 $navbar-brand-font-size:            $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
 $nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;
 $navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;
-$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) * .5 !default;
-$navbar-brand-margin-end:           1rem !default;
+//$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) * .5 !default;
+$navbar-brand-padding-y:            0 !default;
+$navbar-brand-margin-end:           6px !default;
 
 $navbar-toggler-padding-y:          .25rem !default;
 $navbar-toggler-padding-x:          .75rem !default;
@@ -1108,7 +1108,7 @@ $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#E9614B' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
-$navbar-light-color:                rgba($black, .55) !default;
+$navbar-light-color:                $body-color !default;
 $navbar-light-hover-color:          rgba($black, .7) !default;
 $navbar-light-active-color:         rgba($black, .9) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;

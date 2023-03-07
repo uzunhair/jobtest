@@ -1,20 +1,25 @@
 header.header.layout-navbar
 	.container
-		nav.navbar.navbar-expand-lg.navbar-light.bg-light
-			a.navbar-brand(href="#")
+		nav.navbar.navbar-expand-md.navbar-light.bg-light
+			a.navbar-brand.header__brand(href="#")
 				+img('logo.svg')
 			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation")
 				span.navbar-toggler-icon
 			#navbarContent.collapse.navbar-collapse
-				ul.navbar-nav.mr-auto
+				ul.navbar-nav.me-auto
 					li.nav-item
 						a.nav-link(href="#" aria-current="page") О нас
 					each link,title  in header.nav
 						li.nav-item(class={active: link === pageLink})
 							a.nav-link(href= link)=title
-				form.form-inline.my-2.my-lg-0
-					input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
-					button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search
+
+				.header__contact
+					.header__contact-title телефон
+					a.header__contact-phone(href="#") 8 800 700-87-62
+
+				a.btn.btn-dark.header__login(href="#")
+					+icon('login')
+					span Личный кабинет
 
 		block header
 

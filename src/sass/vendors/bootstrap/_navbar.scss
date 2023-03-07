@@ -205,10 +205,10 @@
             position: absolute;
           }
 
-          .nav-link {
-            padding-right: var(--#{$prefix}navbar-nav-link-padding-x);
-            padding-left: var(--#{$prefix}navbar-nav-link-padding-x);
-          }
+          //.nav-link {
+          //  padding-right: var(--#{$prefix}navbar-nav-link-padding-x);
+          //  padding-left: var(--#{$prefix}navbar-nav-link-padding-x);
+          //}
         }
 
         .navbar-nav-scroll {

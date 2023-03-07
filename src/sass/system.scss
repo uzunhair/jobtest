@@ -13,17 +13,17 @@
 @import "vendors/bootstrap/root";
 @import "vendors/bootstrap/reboot";
 //@import "vendors/bootstrap/type";
-//@import "vendors/bootstrap/images";
+@import "vendors/bootstrap/images";
 @import "vendors/bootstrap/containers";
 @import "vendors/bootstrap/grid";
 //@import "vendors/bootstrap/tables";
 @import "vendors/bootstrap/forms";
 @import "vendors/bootstrap/buttons";
-//@import "vendors/bootstrap/transitions";
+@import "vendors/bootstrap/transitions";
 //@import "vendors/bootstrap/dropdown";
 //@import "vendors/bootstrap/button-group";
-//@import "vendors/bootstrap/nav";
-//@import "vendors/bootstrap/navbar";
+@import "vendors/bootstrap/nav";
+@import "vendors/bootstrap/navbar";
 //@import "vendors/bootstrap/card";
 //@import "vendors/bootstrap/accordion";
 //@import "vendors/bootstrap/breadcrumb";
@@ -51,7 +51,7 @@
 //@import "vendors/bootstrap/helpers/text-truncation";
 
 $utilities: map-get-multiple($utilities, (
-  //"display",
+  "display",
   //"order",
   //"flex",
   //"flex-direction",
@@ -66,8 +66,8 @@ $utilities: map-get-multiple($utilities, (
   //"margin-x",
   //"margin-y",
   //"margin-top",
-  //"margin-end",
-  //"margin-bottom",
+  "margin-end",
+  "margin-bottom",
   //"margin-start",
   //"negative-margin",
   //"negative-margin-x",
