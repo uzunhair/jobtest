@@ -151,7 +151,7 @@
   line-height: 1;
   color: var(--#{$prefix}navbar-color);
   background-color: transparent; // remove default button style
-  border: var(--#{$prefix}border-width) solid var(--#{$prefix}navbar-toggler-border-color); // remove default button style
+  border: 0 solid transparent; // remove default button style
   @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
   @include transition(var(--#{$prefix}navbar-toggler-transition));
 
@@ -170,7 +170,7 @@
 // or image file as needed.
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
+  width: 42px;
   height: 1.5em;
   vertical-align: middle;
   background-image: var(--#{$prefix}navbar-toggler-icon-bg);

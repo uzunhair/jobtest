@@ -1,0 +1,26 @@
+section.salute
+    .container
+        h1.salute__title Подберём резюме для ваших вакансий <span class="d-block"></span> и обзвоним <span class="d-block"></span> кандидатов
+
+        .salute__pet
+            +img('pet.png')
+
+        .salute__form
+            h3.salute__form-title
+                .d-lg-none Оставьте заявку <br /> на подбор резюме
+                .d-none.d-lg-block Оставьте заявку, и менеджер ответит в течение 30 минут
+            form
+                .salute__form-item
+                    input(type="email" class="form-control" aria-label="Ваше имя" placeholder="Ваше имя")
+                .salute__form-item
+                    input(type="email" class="form-control" aria-label="Ваш телефон" placeholder="Ваш телефон")
+                .salute__form-item
+                    input(type="email" class="form-control" aria-label="Какого сотрудника вы ищите" placeholder="Какого сотрудника вы ищите")
+
+                .salute__form-item
+                    button.btn.btn-danger.d-block(type="submit") Заказать звонок
+                    .salute__form-help Нажимая на кнопку, вы даете согласие
+                        |
+                        |
+                        a(href="#") на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+
