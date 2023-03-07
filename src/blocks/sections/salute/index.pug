@@ -2,9 +2,9 @@ section.salute
     .container
         h1.salute__title Подберём резюме <span class="d-none d-md-block"></span> для ваших вакансий <span class="d-block"></span> и обзвоним <span class="d-block d-md-none"></span> кандидатов
         .salute__desc
-            .salute__desc-item.salute__desc-item_1 Проведём детальный анализ вакансии
-            .salute__desc-item.salute__desc-item_2 Организуем ручной подбор с учётом ваших требований и пожеланий
-            .salute__desc-item.salute__desc-item_3 Соберём актуальные резюме с ведущих job-ресурсов
+            .salute__desc-item.salute__desc-item_1 Проведём <strong>детальный анализ</strong> вакансии
+            .salute__desc-item.salute__desc-item_2 Организуем <strong>ручной подбор</strong> с учётом ваших требований и пожеланий
+            .salute__desc-item.salute__desc-item_3 Соберём актуальные резюме <strong>с ведущих job-ресурсов</strong>
 
         .salute__pet
             +img('pet.png')
@@ -13,17 +13,17 @@ section.salute
             h3.salute__form-title
                 .d-lg-none Оставьте заявку <br /> на подбор резюме
                 .d-none.d-lg-block Оставьте заявку, и менеджер ответит в течение 30 минут
-            form
-                .salute__form-item
-                    input(type="email" class="form-control" aria-label="Ваше имя" placeholder="Ваше имя")
-                .salute__form-item
-                    input(type="email" class="form-control" aria-label="Ваш телефон" placeholder="Ваш телефон")
-                .salute__form-item
+            form.row.gx-2
+                .col-12.col-md-auto.salute__form-item
+                    input.form-control.salute__form-name(type="email" aria-label="Ваше имя" placeholder="Ваше имя")
+                .col-12.col-md-auto.salute__form-item
+                    input.form-control.salute__form-phone(type="email" aria-label="Ваш телефон" placeholder="Ваш телефон")
+                .col-12.col-lg.salute__form-item
                     input(type="email" class="form-control" aria-label="Какого сотрудника вы ищите" placeholder="Какого сотрудника вы ищите")
 
-                .salute__form-item
-                    button.btn.btn-danger.d-block(type="submit") Заказать звонок
-                    .salute__form-help Нажимая на кнопку, вы даете согласие
-                        |
-                        |
-                        a(href="#") на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+                .col-12.col-lg-auto.salute__form-item
+                    button.btn.btn-danger.salute__form-btn(type="submit") Заказать звонок
+            .salute__form-help Нажимая на кнопку, вы даете согласие
+                |
+                |
+                a(href="#") на обработку персональных данных и соглашаетесь с политикой конфиденциальности

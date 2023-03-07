@@ -28,6 +28,9 @@
 
   &__desc {
     display: flex;
+    align-items: center;
+    margin-bottom: 73px;
+
 
     &-item {
       font-size: 16px;
@@ -43,12 +46,12 @@
         &:after {
           content: '';
           display: block;
-          width: 2px;
+          border-right: 2px solid #fff;
           height: 70px;
           position: absolute;
           right: 0;
-          top: 0;
-          background-color: #FFFFFF;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
       &_2 {
@@ -57,12 +60,12 @@
         &:after {
           content: '';
           display: block;
-          width: 2px;
           height: 70px;
+          border-right: 2px solid #fff;
           position: absolute;
           right: 0;
-          top: 0;
-          background-color: #FFFFFF;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
       &_3 {
@@ -84,13 +87,17 @@
   }
 
   &__form {
-    width: 343px;
-
     padding: 34px 16px;
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #FFFFFF;
     backdrop-filter: blur(9.5px);
     border-radius: 10px;
+    max-width: 100%;
+
+    @include media-breakpoint-up(md) {
+      padding: 20px 24px;
+      width: 978px;
+    }
 
     &-title {
       margin-top: 0;
@@ -100,20 +107,28 @@
       line-height: 120%;
       text-align: center;
       color: #403C3C;
-      letter-spacing: -0.01em;
+
+      @include media-breakpoint-up(md) {
+        font-weight: 600;
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 12px;
+      }
     }
 
     &-item {
-      + .salute__form-item {
-        margin-top: 12px;
+      @include media-breakpoint-down(md) {
+        + .salute__form-item {
+          margin-top: 12px;
+        }
+        &:last-child {
+          margin-top: 16px;
+        }
       }
-      &:last-child {
-        margin-top: 16px;
-      }
-    }
 
-    .btn {
-      width: 100%;
+      @include media-breakpoint-up(md) {
+
+      }
     }
 
     &-help {
@@ -124,6 +139,24 @@
 
       > a {
         color: $body-color;
+      }
+    }
+
+    &-name {
+      @include media-breakpoint-up(lg) {
+        width: 168px;
+      }
+    }
+    &-phone {
+      @include media-breakpoint-up(lg) {
+        width: 192px;
+      }
+    }
+    &-btn {
+      display: block;
+      width: 100%;
+      @include media-breakpoint-up(lg) {
+        width: 234px;
       }
     }
   }
