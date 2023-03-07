@@ -1,0 +1,12 @@
+mixin head()
+	meta(charset="utf-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	if(variable)
+		meta(name="description" content=variable.pageDesc)
+	meta(name="author" content="")
+	if(variable)
+		title #{variable.pageTitle}
+	include head__favicons
+	// Core CSS
+	link(href="css/system.css" rel="stylesheet")
+	link(href="css/theme.css" rel="stylesheet")
