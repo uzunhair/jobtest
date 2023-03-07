@@ -162,7 +162,7 @@
   &:focus {
     text-decoration: none;
     outline: 0;
-    box-shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width);
+    box-shadow: 0 0 0 var(--#{$prefix}navbar-toggler-focus-width) rgba(233, 97, 75, 0.19);
   }
 }
 

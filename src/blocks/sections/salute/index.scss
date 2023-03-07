@@ -3,6 +3,11 @@
   position: relative;
   overflow: hidden;
   max-width: 100%;
+  padding-bottom: 40px;
+
+  .container {
+    position: relative;
+  }
 
   @include media-breakpoint-up(lg) {
     padding-top: 64px;
@@ -17,6 +22,7 @@
 
     @include media-breakpoint-up(md) {
       font-size: 36px;
+      margin-bottom: 24px;
     }
 
     @include media-breakpoint-up(lg) {
@@ -27,21 +33,37 @@
   }
 
   &__desc {
-    display: flex;
-    align-items: center;
-    margin-bottom: 73px;
+    display: none;
 
+    @include media-breakpoint-up(md) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 73px;
+    }
 
     &-item {
-      font-size: 16px;
       color: rgba(64, 60, 60, 0.8);
       position: relative;
       padding-right: 15px;
       margin-right: 22px;
-      line-height: 19px;
+      font-size: 12px;
+      line-height: 120%;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+        line-height: 19px;
+      }
 
       &_1 {
-        width: 175px;
+        width: 104px;
+
+        @include media-breakpoint-up(lg) {
+          width: 175px;
+        }
 
         &:after {
           content: '';
@@ -55,7 +77,11 @@
         }
       }
       &_2 {
-        width: 244px;
+        width: 116px;
+
+        @include media-breakpoint-up(lg) {
+          width: 244px;
+        }
 
         &:after {
           content: '';
@@ -69,7 +95,11 @@
         }
       }
       &_3 {
-        width: 244px;
+        width: 110px;
+
+        @include media-breakpoint-up(lg) {
+          width: 244px;
+        }
       }
     }
   }
@@ -80,6 +110,21 @@
     width: 370px;
     top: 70px;
     right: -142px;
+    z-index: -1;
+
+    @include media-breakpoint-up(md) {
+      height: 350px;
+      width: 240px;
+      top: 19px;
+      right: 42px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 550px;
+      width: 370px;
+      top: -42px;
+      right: -8px;
+    }
 
     img {
       max-width: 100%;
@@ -95,6 +140,10 @@
     max-width: 100%;
 
     @include media-breakpoint-up(md) {
+      padding: 20px 18px;
+    }
+
+    @include media-breakpoint-up(lg) {
       padding: 20px 24px;
       width: 978px;
     }
@@ -143,11 +192,17 @@
     }
 
     &-name {
+      @include media-breakpoint-up(md) {
+        width: 122px;
+      }
       @include media-breakpoint-up(lg) {
         width: 168px;
       }
     }
     &-phone {
+      @include media-breakpoint-up(md) {
+        width: 138px;
+      }
       @include media-breakpoint-up(lg) {
         width: 192px;
       }
