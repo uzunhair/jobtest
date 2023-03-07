@@ -1,10 +1,19 @@
 section.salute
-    .container
+    .container.salute__container
         h1.salute__title Подберём резюме <span class="d-none d-md-block"></span> для ваших вакансий <span class="d-block"></span> и обзвоним <span class="d-block d-md-none"></span> кандидатов
         .salute__desc
-            .salute__desc-item.salute__desc-item_1 Проведём <strong>детальный анализ</strong> вакансии
-            .salute__desc-item.salute__desc-item_2 Организуем <strong>ручной подбор</strong> с учётом ваших требований и пожеланий
-            .salute__desc-item.salute__desc-item_3 Соберём актуальные резюме <strong>с ведущих job-ресурсов</strong>
+            .salute__desc-item.salute__desc-item_1
+                +icon('circle-check')
+                |
+                | Проведём <strong>детальный анализ</strong> вакансии
+            .salute__desc-item.salute__desc-item_2
+                +icon("circle-check")
+                |
+                | Организуем <strong>ручной подбор</strong> с учётом ваших требований и пожеланий
+            .salute__desc-item.salute__desc-item_3
+                +icon('circle-check')
+                |
+                | Соберём актуальные резюме <strong>с ведущих job-ресурсов</strong>
 
         .salute__pet
             +img('pet.png')
