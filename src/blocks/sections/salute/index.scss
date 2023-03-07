@@ -4,6 +4,17 @@
   overflow: hidden;
   max-width: 100%;
   padding-bottom: 40px;
+  &:before {
+    content: '';
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(80px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 
   &__container {
     position: relative;
@@ -22,6 +33,19 @@
     color: #403C3C;
     margin-bottom: 195px;
     order: 0;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: #C3E2A4;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -2;
+      border-radius: 53% 47% 82% 18% / 56% 76% 24% 44% ;
+    }
 
     @include media-breakpoint-up(md) {
       font-size: 36px;
@@ -81,7 +105,7 @@
         position: absolute;
         left: -34px;
         font-size: 24px;
-        
+
         @include media-breakpoint-up(md) {
           display: none;
         }
