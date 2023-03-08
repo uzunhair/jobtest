@@ -6,7 +6,7 @@
   padding-bottom: 40px;
   &:before {
     content: '';
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(80px);
     position: fixed;
     top: 0;
@@ -45,6 +45,9 @@
       bottom: 0;
       z-index: -2;
       border-radius: 53% 47% 82% 18% / 56% 76% 24% 44% ;
+      @include media-breakpoint-up(lg) {
+        right: 50%;
+      }
     }
 
     @include media-breakpoint-up(md) {
