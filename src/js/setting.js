@@ -2,11 +2,11 @@ import Swiper, { Pagination } from 'swiper';
 
 const swiper = new Swiper('.swiper', {
   modules: [Pagination],
-  slidesPerView: 1,
   spaceBetween: 12,
+  slidesPerView: "auto",
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: "auto",
       spaceBetween: 22,
     },
     992: {
