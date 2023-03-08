@@ -10,7 +10,7 @@
   }
 
   &__list {
-
+    padding-bottom: 30px;
   }
 
   &__card {
@@ -18,6 +18,9 @@
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid #FFFFFF;
     border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 
     &-img {
       border-radius: 10px;
@@ -29,7 +32,13 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 22px;
-      min-height: 74px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: $body-color;
+
+      &:hover {
+        color: lighten($body-color, 10%);
+      }
     }
 
     &-desc {
@@ -39,6 +48,24 @@
       font-size: 14px;
       line-height: 180%;
       color: rgba(64, 60, 60, 0.6);
+      margin-top: auto;
+    }
+  }
+
+  &__pagination {
+    top: auto !important;
+    bottom: 0 !important;
+
+    .swiper-pagination-bullet {
+      background: #E9614B;
+      opacity: 0.3;
+      box-shadow: 12px 12px 19px #FDC5C5;
+      transition: all 0.2s ease-in;
+    }
+    .swiper-pagination-bullet-active {
+      background: #E9614B;
+      box-shadow: 1px 3px 4px #FDC5C5;
+      opacity: 1;
     }
   }
 }

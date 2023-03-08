@@ -2,30 +2,30 @@ section.hr
     .container
         h3.hr__title Мы любим писать про HR
 
-        .hr__list.row
-            .col-12.col-md-6.col-lg-4.mb-4
-                .hr__card
+        .hr__list.swiper
+            .swiper-wrapper
+                .swiper-slide.hr__card
                     .hr__card-img
-                        +img('hr-card-1.jpg')
-                    .hr__card-title Внимание! Манипулятор на собеседовании
+                        +img('hr-card-1.png', 'img-fluid')
+                    a.hr__card-title(href="#") Внимание! Манипулятор на собеседовании
                     .hr__card-desc
                         div 19 сентября
                         div 234 просмотров
 
-            .col-12.col-md-6.col-lg-4.mb-4
-                .hr__card
+                .swiper-slide.hr__card
                     .hr__card-img
-                        +img('hr-card-1.jpg')
-                    .hr__card-title Встречаем по одёжке – как оценить внешний вид кандидата в современных реалиях
+                        +img('hr-card-1.png', 'img-fluid')
+                    a.hr__card-title(href="#") Встречаем по одёжке – как оценить внешний вид кандидата в современных реалиях
                     .hr__card-desc
                         div 13 сентября
                         div 211 просмотров
 
-            .col-12.col-md-6.col-lg-4.mb-4
-                .hr__card
+                .swiper-slide.hr__card
                     .hr__card-img
-                        +img('hr-card-1.jpg')
-                    .hr__card-title Кандидат, которому вы отказали, запросил обратную связь. Давать или не давать?
+                        +img('hr-card-1.png', 'img-fluid')
+                    a.hr__card-title(href="#") Кандидат, которому вы отказали, запросил обратную связь. Давать или не давать?
                     .hr__card-desc
                         div 19 сентября
                         div 234 просмотров
+
+            .swiper-pagination.hr__pagination
